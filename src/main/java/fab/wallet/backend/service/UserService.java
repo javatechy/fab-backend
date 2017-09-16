@@ -1,5 +1,9 @@
 package fab.wallet.backend.service;
 
-public interface UserService {
+import fab.wallet.backend.api.Response;
 
+public interface UserService {
+	
+	Response getAllUsers();
+	Response getAllTransactions();
 }
