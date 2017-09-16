@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import fab.wallet.backend.api.Response;
 import fab.wallet.backend.dao.TransactionDao;
 import fab.wallet.backend.service.TransactionService;
+import fab.wallet.backend.util.Constant;
 
 @Service
 public class TransactionServiceImpl implements TransactionService {
@@ -15,7 +16,7 @@ public class TransactionServiceImpl implements TransactionService {
 
 	@Override
 	public Response getBalanceByUserId(Long userId) {
-		Response response = new Response();
+		Response response = new Response(Constant.SUCESS);
 		response.setTransactions(transactionDao.findByUserId(userId));
 		return response;
 	}
