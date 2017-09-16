@@ -1,6 +1,3 @@
-/**
- * 
- */
 package fab.wallet.backend.entity;
 
 import java.io.Serializable;
@@ -20,7 +17,6 @@ import fab.wallet.backend.dao.converter.LocalDateTimeAttributeConverter;
  * @author deepak
  *
  */
-
 @Entity
 @Table(name = "TRANSACTION")
 public class Transaction implements Serializable, Cloneable {
@@ -29,8 +25,8 @@ public class Transaction implements Serializable, Cloneable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "ID")
-	private Long id;
+	@Column(name = "TRANSACTION_ID")
+	private Long trasnactionId;
 
 	@Column(name = "USER_ID")
 	private Long userId;
@@ -68,13 +64,54 @@ public class Transaction implements Serializable, Cloneable {
 		this.updatedOn = updatedOn;
 	}
 
-	public void setId(Long id) {
-		this.id = id;
+	public Long getTrasnactionId() {
+		return trasnactionId;
 	}
 
-	public Long getId() {
-		return id;
+	public void setTrasnactionId(Long trasnactionId) {
+		this.trasnactionId = trasnactionId;
 	}
-	
 
+	public Long getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Long userId) {
+		this.userId = userId;
+	}
+
+	public Long getOldBalance() {
+		return oldBalance;
+	}
+
+	public void setOldBalance(Long oldBalance) {
+		this.oldBalance = oldBalance;
+	}
+
+	public Long getNewBalance() {
+		return newBalance;
+	}
+
+	public void setNewBalance(Long newBalance) {
+		this.newBalance = newBalance;
+	}
+
+	public String getTransactionType() {
+		return transactionType;
+	}
+
+	public void setTransactionType(String transactionType) {
+		this.transactionType = transactionType;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
+	@Override
+	public String toString() {
+		return "Transaction [trasnactionId=" + trasnactionId + ", userId=" + userId + ", oldBalance=" + oldBalance
+				+ ", newBalance=" + newBalance + ", transactionType=" + transactionType + ", createdOn=" + createdOn
+				+ ", updatedOn=" + updatedOn + "]";
+	}
 }

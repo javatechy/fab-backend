@@ -18,7 +18,6 @@ import fab.wallet.backend.dao.converter.LocalDateTimeAttributeConverter;
 
 /**
  * @author deepak
- *
  */
 
 @Entity
@@ -70,4 +69,25 @@ public class Balance implements Serializable, Cloneable {
 		return id;
 	}
 
+	public Long getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Long userId) {
+		this.userId = userId;
+	}
+
+	public Long getBalance() {
+		return balance;
+	}
+
+	public void setBalance(Long balance) {
+		this.balance = balance;
+	}
+
+	@Override
+	public String toString() {
+		return "Balance [id=" + id + ", userId=" + userId + ", balance=" + balance + ", createdOn=" + createdOn
+				+ ", updatedOn=" + updatedOn + "]";
+	}
 }
