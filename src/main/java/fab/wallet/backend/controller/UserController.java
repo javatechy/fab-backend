@@ -17,7 +17,6 @@ import fab.wallet.backend.api.Request;
 import fab.wallet.backend.api.Response;
 import fab.wallet.backend.service.TransactionService;
 import fab.wallet.backend.service.UserService;
-import fab.wallet.backend.util.Converter;
 
 @CrossOrigin(origins="*")
 @RestController

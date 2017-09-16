@@ -33,14 +33,14 @@ public class TransactionServiceImpl implements TransactionService {
 
 	@Override
 	public Response getBalanceByUserId(Long userId) {
-		Response response = new Response(Constant.SUCESS);
+		Response response = new Response(Constant.STATUS_SUCCESS);
 		response.setTransactions(transactionDao.findByUserId(userId));
 		return response;
 	}
 
 	@Override
 	public Response getAllTransactions() {
-		Response response = new Response(Constant.SUCESS);
+		Response response = new Response(Constant.STATUS_SUCCESS);
 		response.setTransactions(transactionDao.findAll());
 		return response;
 	}
@@ -52,9 +52,9 @@ public class TransactionServiceImpl implements TransactionService {
 		Balance balance = userService.getBalanceByUserId(request.getUserId()).getBalance();
 		Long oldBalance = balance.getBalance();
 		Long newBalance = oldBalance - serviceAmount;
-		if (newBalance < 0) {
+		if (newBalance < 0 ) {
 			throw new InsufficientBalanceException(
-					"Balance is lesser than the purchase amount please add some money!!!! Transaction Amount  :"
+					"Tranaction amount > Balance !!!! Transaction Amount  :"
 							+ request.getAmount() + "\n Avaliable Balance:" + balance.getBalance());
 		}
 		balance.setBalance(newBalance);
@@ -68,7 +68,8 @@ public class TransactionServiceImpl implements TransactionService {
 		transaction.setCreatedOn(LocalDateTime.now());
 		transaction.setUpdatedOn(LocalDateTime.now());
 		transaction.setTransactionAmount(serviceAmount);
-		Response response = new Response(Constant.SUCESS);
+		transactionDao.save(transaction);
+		Response response = new Response(Constant.STATUS_SUCCESS);
 		return response;
 	}
 }

@@ -27,26 +27,26 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public Response getAllUsers() {
-		Response response = new Response(Constant.SUCESS);
-		response.setUsers(userDao.findAll());
+		Response response = new Response(Constant.STATUS_SUCCESS);
+		response.setUsers(userDao.findAllByRole(Constant.ROLE_NON_ADMIN));
 		return response;
 	}
 
 	@Override
 	public Response getAllTransactions() {
-		Response response = new Response(Constant.SUCESS);
+		Response response = new Response(Constant.STATUS_SUCCESS);
 		response.setUsers(userDao.findAll());
 		return response;
 	}
 
 	@Override
 	public Response authenticateUser(Request request) {
-		Response response = new Response(Constant.SUCESS);
+		Response response = new Response(Constant.STATUS_SUCCESS);
 		String userName = request.getUserName();
 		String password = request.getPassword();
 		User user = userDao.findByUserNameAndPassword(userName, password);
 		if (Objects.isNull(user)) {
-			throw new UserNotFoundException("No User found with username:" + userName + "and password " + password);
+			throw new UserNotFoundException("No User found with username: " + userName + " and password " + password);
 		}
 		response.setUser(user);
 		return response;
@@ -54,10 +54,10 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public Response getBalanceByUserId(Long userId) {
-		Response response = new Response(Constant.SUCESS);
+		Response response = new Response(Constant.STATUS_SUCCESS);
 		Balance balance = balanceDao.getBalanceByUserId(userId);
 		if (Objects.isNull(balance)) {
-			throw new WalletNotFoundException("Entry not found for the user" + userId);
+			throw new WalletNotFoundException("Wallet not found for the userId: " + userId);
 		}
 		response.setBalance(balance);
 		return response;

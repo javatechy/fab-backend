@@ -26,7 +26,7 @@ public class Transaction implements Serializable, Cloneable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "TRANSACTION_ID")
-	private Long trasnactionId;
+	private Long transactionId;
 
 	@Column(name = "USER_ID")
 	private Long userId;
@@ -67,12 +67,12 @@ public class Transaction implements Serializable, Cloneable {
 		this.updatedOn = updatedOn;
 	}
 
-	public Long getTrasnactionId() {
-		return trasnactionId;
+	public Long getTransactionId() {
+		return transactionId;
 	}
 
-	public void setTrasnactionId(Long trasnactionId) {
-		this.trasnactionId = trasnactionId;
+	public void setTransactionId(Long transactionId) {
+		this.transactionId = transactionId;
 	}
 
 	public Long getUserId() {
@@ -117,7 +117,7 @@ public class Transaction implements Serializable, Cloneable {
 
 	@Override
 	public String toString() {
-		return "Transaction [trasnactionId=" + trasnactionId + ", userId=" + userId + ", oldBalance=" + oldBalance
+		return "Transaction [trasnactionId=" + transactionId + ", userId=" + userId + ", oldBalance=" + oldBalance
 				+ ", newBalance=" + newBalance + ", transactionType=" + transactionType + ", createdOn=" + createdOn
 				+ ", updatedOn=" + updatedOn + "]";
 	}

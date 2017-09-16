@@ -2,8 +2,6 @@ package fab.wallet.backend.service.impl;
 
 import java.time.LocalDateTime;
 
-import javax.annotation.PostConstruct;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,13 +21,16 @@ public class SetupServiceImpl implements SetupService {
 	@Autowired
 	private BalanceDao balanceDao;
 	
-	@PostConstruct
+	//@PostConstruct
 	public void addUsers(){
 		userDao.deleteAll();
 		balanceDao.deleteAll();
 		addUser(Constant.ROLE_ADMIN,"admin","admin");
+		addUser(Constant.ROLE_ADMIN,"admin2","admin2");
 		addUserWithBalance(Constant.ROLE_NON_ADMIN,"deepak","deepak",5000L);
 		addUserWithBalance(Constant.ROLE_NON_ADMIN,"anant","anant",1000L);
+		addUserWithBalance(Constant.ROLE_NON_ADMIN,"user1","user1",8000L);
+		addUserWithBalance(Constant.ROLE_NON_ADMIN,"user2","user2",100L);
 	}
 
 	private void addUserWithBalance( String role,String userName, String password, Long walletBalance) {
@@ -50,11 +51,5 @@ public class SetupServiceImpl implements SetupService {
 		user.setCreatedOn(LocalDateTime.now());
 		user.setUpdatedOn(LocalDateTime.now());
 		return userDao.save(user);	
-	}
-
-	@Override
-	public void addWalletBalances() {
-		// TODO Auto-generated method stub
-		
 	}
 }

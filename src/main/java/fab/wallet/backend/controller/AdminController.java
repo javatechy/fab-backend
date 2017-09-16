@@ -27,13 +27,13 @@ public class AdminController {
 	private TransactionService transactionService;
 
 	@RequestMapping(value = "fab/users", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.ALL_VALUE)
-	public Response fetchUsers(HttpServletRequest request, HttpServletResponse response) throws Exception {
+	public Response fetchUsers(HttpServletRequest request, HttpServletResponse response) {
 		return userService.getAllUsers();
 	}
 
 	@RequestMapping(value = "fab/transactions/{userId}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.ALL_VALUE)
 	public Response fetchTransactionsByUserId(@NotNull @PathVariable Long userId, HttpServletRequest request,
-			HttpServletResponse response) throws Exception {
+			HttpServletResponse response) {
 		return transactionService.getBalanceByUserId(userId);
 	}
 }
