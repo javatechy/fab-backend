@@ -6,6 +6,7 @@ import javax.validation.constraints.NotNull;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -39,7 +40,7 @@ public class UserController {
 	}
 	
 	@RequestMapping(value = "/fab/balance/{userId}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	public Response getBalance(@NotNull Long userId, HttpServletRequest httpRequest,
+	public Response getBalance(@NotNull  @PathVariable Long userId, HttpServletRequest httpRequest,
 			HttpServletResponse response) throws Exception {
 		return userService.getBalanceByUserId(userId);
 	}

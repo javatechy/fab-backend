@@ -46,8 +46,7 @@ public class UserServiceImpl implements UserService {
 		String password = request.getPassword();
 		User user = userDao.findByUserNameAndPassword(userName, password);
 		if (Objects.isNull(user)) {
-			throw new UserNotFoundException(
-					String.join("", "No User found with username:", userName, "and password", password));
+			throw new UserNotFoundException("No User found with username:" + userName + "and password " + password);
 		}
 		response.setUser(user);
 		return response;
@@ -61,6 +60,6 @@ public class UserServiceImpl implements UserService {
 			throw new WalletNotFoundException("Entry not found for the user" + userId);
 		}
 		response.setBalance(balance);
-		return null;
+		return response;
 	}
 }
