@@ -17,10 +17,8 @@ public class Response {
 	private String status;
 	private List<User> users;
 	private User user;
-	private List<Balance> balances;
 	private Balance balance;
 	private List<Transaction> transactions;
-	private Transaction trasnaction;
 	private Error error;
 
 	public Response(String code) {
@@ -52,13 +50,6 @@ public class Response {
 		this.user = user;
 	}
 
-	public List<Balance> getBalances() {
-		return balances;
-	}
-
-	public void setBalances(List<Balance> balances) {
-		this.balances = balances;
-	}
 
 	public Balance getBalance() {
 		return balance;
@@ -74,14 +65,6 @@ public class Response {
 
 	public void setTransactions(List<Transaction> transactions) {
 		this.transactions = transactions;
-	}
-
-	public Transaction getTrasnaction() {
-		return trasnaction;
-	}
-
-	public void setTrasnaction(Transaction trasnaction) {
-		this.trasnaction = trasnaction;
 	}
 
 	public Error getError() {
