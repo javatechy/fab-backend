@@ -11,7 +11,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import fab.wallet.backend.dao.converter.LocalDateTimeAttributeConverter;
+import fab.wallet.backend.util.LocalDateTimeAttributeConverter;
 
 /**
  * @author deepak
@@ -36,6 +36,9 @@ public class Transaction implements Serializable, Cloneable {
 
 	@Column(name = "NEW_BALANCE")
 	private Long newBalance;
+
+	@Column(name = "TRANSACTION_AMOUNT")
+	private Long transactionAmount;
 
 	@Column(name = "TRANSACTION_TYPE")
 	private String transactionType;
@@ -104,8 +107,12 @@ public class Transaction implements Serializable, Cloneable {
 		this.transactionType = transactionType;
 	}
 
-	public static long getSerialversionuid() {
-		return serialVersionUID;
+	public Long getTransactionAmount() {
+		return transactionAmount;
+	}
+
+	public void setTransactionAmount(Long transactionAmount) {
+		this.transactionAmount = transactionAmount;
 	}
 
 	@Override

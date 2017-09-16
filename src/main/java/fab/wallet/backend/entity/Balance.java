@@ -14,7 +14,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import fab.wallet.backend.dao.converter.LocalDateTimeAttributeConverter;
+import fab.wallet.backend.util.LocalDateTimeAttributeConverter;
 
 /**
  * @author deepak

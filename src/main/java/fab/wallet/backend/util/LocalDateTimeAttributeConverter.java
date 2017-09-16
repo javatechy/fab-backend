@@ -1,4 +1,7 @@
-package fab.wallet.backend.dao.converter;
+/**
+ * 
+ */
+package fab.wallet.backend.util;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
@@ -7,8 +10,8 @@ import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;
 
 /**
- * 
- * @author deepak
+ * @author rohit.kumar2
+ *
  */
 @Converter(autoApply = true)
 public class LocalDateTimeAttributeConverter

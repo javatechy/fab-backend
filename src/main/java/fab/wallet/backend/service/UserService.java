@@ -4,8 +4,12 @@ import fab.wallet.backend.api.Request;
 import fab.wallet.backend.api.Response;
 
 public interface UserService {
-	
+
 	Response getAllUsers();
+
 	Response getAllTransactions();
+
 	Response authenticateUser(Request request);
+
+	Response getBalanceByUserId(Long userId);
 }

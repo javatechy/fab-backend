@@ -10,4 +10,6 @@ import fab.wallet.backend.entity.Balance;
 @Repository
 public interface BalanceDao extends JpaRepository<Balance, Serializable> {
 
+	Balance getBalanceByUserId(Long userId);
+
 }
