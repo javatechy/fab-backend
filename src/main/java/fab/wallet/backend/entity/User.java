@@ -32,7 +32,7 @@ public class User implements Serializable, Cloneable {
 	private String role;
 
 	@Column(name = "USERNAME")
-	private String username;
+	private String userName;
 
 	@Column(name = "PASSWORD")
 	private String password;
@@ -77,12 +77,12 @@ public class User implements Serializable, Cloneable {
 		this.role = role;
 	}
 
-	public String getUsername() {
-		return username;
+	public String getUserName() {
+		return userName;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 	public String getPassword() {
@@ -99,7 +99,7 @@ public class User implements Serializable, Cloneable {
 
 	@Override
 	public String toString() {
-		return "User [userId=" + userId + ", role=" + role + ", username=" + username + ", password=" + password
+		return "User [userId=" + userId + ", role=" + role + ", username=" + userName + ", password=" + password
 				+ ", createdOn=" + createdOn + ", updatedOn=" + updatedOn + "]";
 	}
 }

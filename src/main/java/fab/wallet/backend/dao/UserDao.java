@@ -10,4 +10,5 @@ import fab.wallet.backend.entity.User;
 @Repository
 public interface UserDao extends JpaRepository<User, Serializable> {
 
+	User findByUserNameAndPassword(String userName, String password);
 }

@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import fab.wallet.backend.api.Response;
+import fab.wallet.backend.service.TransactionService;
 import fab.wallet.backend.service.UserService;
 
 @RestController
@@ -19,16 +20,19 @@ public class AdminController {
 
 	@Autowired
 	private UserService userService;
+	
+	@Autowired
+	private TransactionService transactionService;
 
-	@RequestMapping(value = "/cbn/users", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	public Response fetchUsers(@NotNull @PathVariable String userId, HttpServletRequest request,
+	@RequestMapping(value = "fab/users", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public Response fetchUsers(HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
 		return userService.getAllUsers();
 	}
 	
-	@RequestMapping(value = "/cbn/transactions/{userId}/", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	public Response fetchTransactionsByUserId(@NotNull @PathVariable String userId, HttpServletRequest request,
+	@RequestMapping(value = "fab/transactions/{userId}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public Response fetchTransactionsByUserId(@NotNull @PathVariable Long userId, HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
-		return userService.getAllUsers();
+		return transactionService.getBalanceByUserId(userId);
 	}
 }
