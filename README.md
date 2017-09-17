@@ -10,10 +10,10 @@ This application uses maven as build tool and MySQL as database.
 Assumptions:
 -----------------------------
 
-Assuming following softwares are installed on your machine:
+Assuming:
  * Java 8 is installed
  * Port 8080 is empty , if not please change server.port property in `application.properties` in `src/main/resources`
- * MySQL is installed on the machine on port 3306(default port), if not please change port in application.properties[src/main/resources]
+ * MySQL is installed on the machine on port 3306(default port), if not please change port in `application.properties`
  * DB credentials are same as mentioned in `application.properties`
 
 
@@ -51,6 +51,11 @@ Adding New User
 Update `SetupServiceImpl` and add your user.
 
 
-Others:
+Exception Handling
 -----------------------------
-All java files are well documented for clarification.
+This project uses global exception handling using `ResponseEntityExceptionHandler` check `ExceptionInterceptor` class for reference.
+
+API
+-----------------------------
+ * Single Request and Single Response structure has been followed.
+ * All Exception cases follows `fab.wallet.backend.api.Error` structure.
