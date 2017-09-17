@@ -17,7 +17,7 @@ import fab.wallet.backend.service.TransactionService;
 import fab.wallet.backend.service.UserService;
 
 @RestController
-@CrossOrigin(origins="*")
+@CrossOrigin(origins = "*")
 public class AdminController {
 
 	@Autowired

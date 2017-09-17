@@ -1,8 +1,9 @@
 package fab.wallet.backend.exception;
 
-public class WalletNotFoundException extends RuntimeException{
+public class WalletNotFoundException extends Exception{
 
-	private static final long serialVersionUID = -7226103290266357090L;
+	private static final long serialVersionUID = 1L;
+
 	public WalletNotFoundException(String message) {
 		super(message);
 	}

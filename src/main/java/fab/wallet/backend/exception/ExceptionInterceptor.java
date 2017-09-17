@@ -28,6 +28,7 @@ public class ExceptionInterceptor extends ResponseEntityExceptionHandler {
 	public Response insufficientBalance(HttpServletRequest request, HttpServletResponse httpResponse, Exception ex) {
 		return buildErrorResponse(Constant.EX_INSUFFICIENT_BALANCE, ex.getMessage());
 	}
+
 	@ExceptionHandler(value = WalletNotFoundException.class)
 	@ResponseBody
 	public Response walletNotFound(HttpServletRequest request, HttpServletResponse httpResponse, Exception ex) {

@@ -1,8 +1,8 @@
 package fab.wallet.backend.exception;
 
-public class InsufficientBalanceException extends RuntimeException{
+public class InsufficientBalanceException extends Exception{
 
-	private static final long serialVersionUID = -7226103290266357090L;
+	private static final long serialVersionUID = 1L;
 	public InsufficientBalanceException(String message) {
 		super(message);
 	}

@@ -14,6 +14,7 @@ import fab.wallet.backend.dao.TransactionDao;
 import fab.wallet.backend.entity.Balance;
 import fab.wallet.backend.entity.Transaction;
 import fab.wallet.backend.exception.InsufficientBalanceException;
+import fab.wallet.backend.exception.WalletNotFoundException;
 import fab.wallet.backend.service.TransactionService;
 import fab.wallet.backend.service.UserService;
 import fab.wallet.backend.util.Constant;
@@ -47,7 +48,7 @@ public class TransactionServiceImpl implements TransactionService {
 
 	@Override
 	@Transactional
-	public Response purchaseItem(Request request) {
+	public Response purchaseItem(Request request) throws InsufficientBalanceException, WalletNotFoundException {
 		Long serviceAmount = request.getAmount();
 		Balance balance = userService.getBalanceByUserId(request.getUserId()).getBalance();
 		Long oldBalance = balance.getBalance();

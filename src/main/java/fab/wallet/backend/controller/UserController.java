@@ -15,35 +15,37 @@ import org.springframework.web.bind.annotation.RestController;
 
 import fab.wallet.backend.api.Request;
 import fab.wallet.backend.api.Response;
+import fab.wallet.backend.exception.InsufficientBalanceException;
+import fab.wallet.backend.exception.UserNotFoundException;
+import fab.wallet.backend.exception.WalletNotFoundException;
 import fab.wallet.backend.service.TransactionService;
 import fab.wallet.backend.service.UserService;
 
-@CrossOrigin(origins="*")
+@CrossOrigin(origins = "*")
 @RestController
 public class UserController {
 
 	@Autowired
 	private UserService userService;
-	
+
 	@Autowired
 	private TransactionService transactionService;
 
-
 	@RequestMapping(value = "/fab/authenticate", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.ALL_VALUE)
 	public Response fetchUsers(@RequestBody Request request, HttpServletRequest httpRequest,
-			HttpServletResponse response) throws Exception {
+			HttpServletResponse response) throws UserNotFoundException {
 		return userService.authenticateUser(request);
 	}
-	
+
 	@RequestMapping(value = "/fab/purchase", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.ALL_VALUE)
-	public Response purchase(@RequestBody Request request, HttpServletRequest httpRequest,
-			HttpServletResponse response) throws Exception {
+	public Response purchase(@RequestBody Request request, HttpServletRequest httpRequest, HttpServletResponse response)
+			throws InsufficientBalanceException, WalletNotFoundException {
 		return transactionService.purchaseItem(request);
 	}
-	
+
 	@RequestMapping(value = "/fab/balance/{userId}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.ALL_VALUE)
-	public Response getBalance(@NotNull  @PathVariable Long userId, HttpServletRequest httpRequest,
-			HttpServletResponse response) throws Exception {
+	public Response getBalance(@NotNull @PathVariable Long userId, HttpServletRequest httpRequest,
+			HttpServletResponse response) throws WalletNotFoundException {
 		return userService.getBalanceByUserId(userId);
 	}
 }

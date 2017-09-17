@@ -33,14 +33,7 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public Response getAllTransactions() {
-		Response response = new Response(Constant.STATUS_SUCCESS);
-		response.setUsers(userDao.findAll());
-		return response;
-	}
-
-	@Override
-	public Response authenticateUser(Request request) {
+	public Response authenticateUser(Request request) throws UserNotFoundException {
 		Response response = new Response(Constant.STATUS_SUCCESS);
 		String userName = request.getUserName();
 		String password = request.getPassword();
@@ -53,7 +46,7 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public Response getBalanceByUserId(Long userId) {
+	public Response getBalanceByUserId(Long userId) throws WalletNotFoundException {
 		Response response = new Response(Constant.STATUS_SUCCESS);
 		Balance balance = balanceDao.getBalanceByUserId(userId);
 		if (Objects.isNull(balance)) {
