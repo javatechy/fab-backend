@@ -1,4 +1,4 @@
-package fab.wallet.backend.util;
+package fab.wallet.backend.commons;
 
 /**
  * Constant file.

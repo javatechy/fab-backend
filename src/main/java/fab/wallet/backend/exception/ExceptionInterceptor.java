@@ -11,7 +11,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 
 import fab.wallet.backend.api.Error;
 import fab.wallet.backend.api.Response;
-import fab.wallet.backend.util.Constant;
+import fab.wallet.backend.commons.Constant;
 
 /**
  * Global Exception Handler

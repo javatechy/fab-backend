@@ -4,17 +4,14 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 import javax.persistence.Column;
-import javax.persistence.Convert;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import fab.wallet.backend.util.LocalDateTimeAttributeConverter;
-
 /**
- * Transaction Entity - stores all transactions.
+ * Class representing transactions , identified by "transactionId".
  * 
  * @author deepak
  *
@@ -46,11 +43,9 @@ public class Transaction implements Serializable, Cloneable {
 	private String transactionType;
 
 	@Column(name = "CREATED_ON")
-	@Convert(converter = LocalDateTimeAttributeConverter.class)
 	private LocalDateTime createdOn;
 
 	@Column(name = "UPDATED_ON")
-	@Convert(converter = LocalDateTimeAttributeConverter.class)
 	private LocalDateTime updatedOn;
 
 	public LocalDateTime getCreatedOn() {
@@ -122,5 +117,72 @@ public class Transaction implements Serializable, Cloneable {
 		return "Transaction [trasnactionId=" + transactionId + ", userId=" + userId + ", oldBalance=" + oldBalance
 				+ ", newBalance=" + newBalance + ", transactionType=" + transactionType + ", createdOn=" + createdOn
 				+ ", updatedOn=" + updatedOn + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((createdOn == null) ? 0 : createdOn.hashCode());
+		result = prime * result + ((newBalance == null) ? 0 : newBalance.hashCode());
+		result = prime * result + ((oldBalance == null) ? 0 : oldBalance.hashCode());
+		result = prime * result + ((transactionAmount == null) ? 0 : transactionAmount.hashCode());
+		result = prime * result + ((transactionId == null) ? 0 : transactionId.hashCode());
+		result = prime * result + ((transactionType == null) ? 0 : transactionType.hashCode());
+		result = prime * result + ((updatedOn == null) ? 0 : updatedOn.hashCode());
+		result = prime * result + ((userId == null) ? 0 : userId.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Transaction other = (Transaction) obj;
+		if (createdOn == null) {
+			if (other.createdOn != null)
+				return false;
+		} else if (!createdOn.equals(other.createdOn))
+			return false;
+		if (newBalance == null) {
+			if (other.newBalance != null)
+				return false;
+		} else if (!newBalance.equals(other.newBalance))
+			return false;
+		if (oldBalance == null) {
+			if (other.oldBalance != null)
+				return false;
+		} else if (!oldBalance.equals(other.oldBalance))
+			return false;
+		if (transactionAmount == null) {
+			if (other.transactionAmount != null)
+				return false;
+		} else if (!transactionAmount.equals(other.transactionAmount))
+			return false;
+		if (transactionId == null) {
+			if (other.transactionId != null)
+				return false;
+		} else if (!transactionId.equals(other.transactionId))
+			return false;
+		if (transactionType == null) {
+			if (other.transactionType != null)
+				return false;
+		} else if (!transactionType.equals(other.transactionType))
+			return false;
+		if (updatedOn == null) {
+			if (other.updatedOn != null)
+				return false;
+		} else if (!updatedOn.equals(other.updatedOn))
+			return false;
+		if (userId == null) {
+			if (other.userId != null)
+				return false;
+		} else if (!userId.equals(other.userId))
+			return false;
+		return true;
 	}
 }

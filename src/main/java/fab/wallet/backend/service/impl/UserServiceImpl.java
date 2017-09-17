@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import fab.wallet.backend.api.Request;
 import fab.wallet.backend.api.Response;
+import fab.wallet.backend.commons.Constant;
 import fab.wallet.backend.dao.BalanceDao;
 import fab.wallet.backend.dao.UserDao;
 import fab.wallet.backend.entity.Balance;
@@ -14,7 +15,6 @@ import fab.wallet.backend.entity.User;
 import fab.wallet.backend.exception.UserNotFoundException;
 import fab.wallet.backend.exception.WalletNotFoundException;
 import fab.wallet.backend.service.UserService;
-import fab.wallet.backend.util.Constant;
 
 /**
  * Service Implementation for {@link UserService}

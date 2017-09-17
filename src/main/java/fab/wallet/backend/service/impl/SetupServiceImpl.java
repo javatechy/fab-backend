@@ -2,15 +2,17 @@ package fab.wallet.backend.service.impl;
 
 import java.time.LocalDateTime;
 
+import javax.annotation.PostConstruct;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import fab.wallet.backend.commons.Constant;
 import fab.wallet.backend.dao.BalanceDao;
 import fab.wallet.backend.dao.UserDao;
 import fab.wallet.backend.entity.Balance;
 import fab.wallet.backend.entity.User;
 import fab.wallet.backend.service.SetupService;
-import fab.wallet.backend.util.Constant;
 
 /**
  * Service implementation of the {@link SetupService}
@@ -30,7 +32,7 @@ public class SetupServiceImpl implements SetupService {
 	/**
 	 * {@inheritDoc}
 	 */
-	// @PostConstruct
+	@PostConstruct
 	@Override
 	public void addUsers() {
 		userDao.deleteAll();
