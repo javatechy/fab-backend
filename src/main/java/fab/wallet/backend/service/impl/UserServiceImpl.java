@@ -16,6 +16,12 @@ import fab.wallet.backend.exception.WalletNotFoundException;
 import fab.wallet.backend.service.UserService;
 import fab.wallet.backend.util.Constant;
 
+/**
+ * Service Implementation for {@link UserService}
+ * 
+ * @author deepak
+ *
+ */
 @Service
 public class UserServiceImpl implements UserService {
 
@@ -25,6 +31,9 @@ public class UserServiceImpl implements UserService {
 	@Autowired
 	private BalanceDao balanceDao;
 
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public Response getAllUsers() {
 		Response response = new Response(Constant.STATUS_SUCCESS);
@@ -32,6 +41,9 @@ public class UserServiceImpl implements UserService {
 		return response;
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public Response authenticateUser(Request request) throws UserNotFoundException {
 		Response response = new Response(Constant.STATUS_SUCCESS);
@@ -45,6 +57,9 @@ public class UserServiceImpl implements UserService {
 		return response;
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public Response getBalanceByUserId(Long userId) throws WalletNotFoundException {
 		Response response = new Response(Constant.STATUS_SUCCESS);

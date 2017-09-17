@@ -1,6 +1,9 @@
 package fab.wallet.backend.api;
 
 /**
+ * Common Request Class for entire project.All POST/PUT Requests to this project are bound
+ * to follow this format only.
+ * 
  * @author deepak
  */
 public class Request {
@@ -53,7 +56,6 @@ public class Request {
 	@Override
 	public String toString() {
 		return "Request [userName=" + userName + ", password=" + password + ", transactionType=" + transactionType
-				+ ", amount=" + amount + "]";
+				+ ", amount=" + amount + ", userId=" + userId + "]";
 	}
-
 }

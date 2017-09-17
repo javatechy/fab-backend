@@ -10,6 +10,8 @@ import fab.wallet.backend.entity.Transaction;
 import fab.wallet.backend.entity.User;
 
 /**
+ * Common Response for all requests.
+ * 
  * @author deepak
  */
 public class Response {

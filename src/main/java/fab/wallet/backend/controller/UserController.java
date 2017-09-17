@@ -21,6 +21,12 @@ import fab.wallet.backend.exception.WalletNotFoundException;
 import fab.wallet.backend.service.TransactionService;
 import fab.wallet.backend.service.UserService;
 
+/**
+ * Controller for user details and authentication.
+ * 
+ * @author deepak
+ *
+ */
 @CrossOrigin(origins = "*")
 @RestController
 public class UserController {

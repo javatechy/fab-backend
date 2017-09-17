@@ -16,6 +16,11 @@ import fab.wallet.backend.api.Response;
 import fab.wallet.backend.service.TransactionService;
 import fab.wallet.backend.service.UserService;
 
+/**
+ * Admin Controller for all admin operations.
+ * @author deepak
+ *
+ */
 @RestController
 @CrossOrigin(origins = "*")
 public class AdminController {
@@ -34,6 +39,6 @@ public class AdminController {
 	@RequestMapping(value = "fab/transactions/{userId}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.ALL_VALUE)
 	public Response fetchTransactionsByUserId(@NotNull @PathVariable Long userId, HttpServletRequest request,
 			HttpServletResponse response) {
-		return transactionService.getBalanceByUserId(userId);
+		return transactionService.getTransactionsByUserId(userId);
 	}
 }

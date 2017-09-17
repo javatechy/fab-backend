@@ -19,6 +19,11 @@ import fab.wallet.backend.service.TransactionService;
 import fab.wallet.backend.service.UserService;
 import fab.wallet.backend.util.Constant;
 
+/**
+ * Service implementation of {@link TransactionService}.
+ * @author deepak
+ *
+ */
 @Service
 public class TransactionServiceImpl implements TransactionService {
 
@@ -32,13 +37,19 @@ public class TransactionServiceImpl implements TransactionService {
 	@Autowired
 	private UserService userService;
 
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
-	public Response getBalanceByUserId(Long userId) {
+	public Response getTransactionsByUserId(Long userId) {
 		Response response = new Response(Constant.STATUS_SUCCESS);
 		response.setTransactions(transactionDao.findByUserId(userId));
 		return response;
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public Response getAllTransactions() {
 		Response response = new Response(Constant.STATUS_SUCCESS);
@@ -46,6 +57,9 @@ public class TransactionServiceImpl implements TransactionService {
 		return response;
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	@Transactional
 	public Response purchaseItem(Request request) throws InsufficientBalanceException, WalletNotFoundException {

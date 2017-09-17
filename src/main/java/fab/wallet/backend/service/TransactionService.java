@@ -29,7 +29,7 @@ public interface TransactionService {
 	 *            UserId of the user
 	 * @return Response containing status and list of transactions.
 	 */
-	Response getBalanceByUserId(Long userId);
+	Response getTransactionsByUserId(Long userId);
 
 	/**
 	 * Manage transactions - Deducting balance,Making entry in {@link Transaction}
