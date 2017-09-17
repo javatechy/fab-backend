@@ -17,9 +17,9 @@ import javax.persistence.Table;
 import fab.wallet.backend.util.LocalDateTimeAttributeConverter;
 
 /**
+ * Balance of a user.
  * @author deepak
  */
-
 @Entity
 @Table(name = "BALANCE")
 public class Balance implements Serializable, Cloneable {

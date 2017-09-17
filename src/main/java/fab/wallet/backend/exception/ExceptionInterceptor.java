@@ -13,6 +13,12 @@ import fab.wallet.backend.api.Error;
 import fab.wallet.backend.api.Response;
 import fab.wallet.backend.util.Constant;
 
+/**
+ * Global Exception Handler
+ * 
+ * @author deepak
+ *
+ */
 @EnableWebMvc
 @ControllerAdvice
 public class ExceptionInterceptor extends ResponseEntityExceptionHandler {
@@ -36,11 +42,20 @@ public class ExceptionInterceptor extends ResponseEntityExceptionHandler {
 	}
 
 	@ExceptionHandler(value = Exception.class)
-	public Response jsonParseException(HttpServletRequest request, HttpServletResponse httpResponse, Exception ex) {
+	public Response parentException(HttpServletRequest request, HttpServletResponse httpResponse, Exception ex) {
 		ex.printStackTrace();
 		return buildErrorResponse(Constant.EX_UNKOWN_EXCEPTION, Constant.EX_UNKOWN_EXCEPTION_MSG);
 	}
 
+	/**
+	 * Build Error Response based on the status and message.
+	 * 
+	 * @param status
+	 *            internal error code based on the Exception
+	 * @param message
+	 *            Exception message
+	 * @return
+	 */
 	private Response buildErrorResponse(String status, String message) {
 		Response response = new Response(Constant.ERROR);
 		Error error = new Error();

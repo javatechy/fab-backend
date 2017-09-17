@@ -14,6 +14,8 @@ import javax.persistence.Table;
 import fab.wallet.backend.util.LocalDateTimeAttributeConverter;
 
 /**
+ * User Entity 
+ * 
  * @author deepak
  */
 @Entity

@@ -14,6 +14,8 @@ import javax.persistence.Table;
 import fab.wallet.backend.util.LocalDateTimeAttributeConverter;
 
 /**
+ * Transaction Entity - stores all transactions.
+ * 
  * @author deepak
  *
  */
