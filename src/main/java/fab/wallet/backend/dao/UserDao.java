@@ -24,7 +24,7 @@ public interface UserDao extends JpaRepository<User, Serializable> {
 	 *            userName of the user.
 	 * @param password
 	 *            Password of the user.
-	 * @return
+	 * @return User object containing user's information
 	 */
 	User findByUserNameAndPassword(String userName, String password);
 

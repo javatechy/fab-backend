@@ -36,9 +36,12 @@ public interface TransactionService {
 	 * table and updating {@link Balance} table.
 	 * 
 	 * @param request
+	 *            Request from client
 	 * @return Response containing status
-	 * @throws InsufficientBalanceException 
-	 * @throws WalletNotFoundException 
+	 * @throws InsufficientBalanceException
+	 *             When balance is <0
+	 * @throws WalletNotFoundException
+	 *             When wallet is not found for the user.
 	 */
 	Response purchaseItem(Request request) throws InsufficientBalanceException, WalletNotFoundException;
 }
