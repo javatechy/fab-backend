@@ -35,6 +35,9 @@ To build the application `mvn clean install`
 
 Run the application using `mvn spring-boot:run`
 
+#### Release : 
+To release a production version `mvn release:clean release:prepare`
+
 Database Structure
 -----------------------------
 Following tables are created:
