@@ -38,6 +38,9 @@ Run the application using `mvn spring-boot:run`
 #### Release : 
 To release a production version `mvn release:clean release:prepare`
 
+#### Deploy :
+To deploy build on nexus  `mvn clean deploy`
+
 Database Structure
 -----------------------------
 Following tables are created:
