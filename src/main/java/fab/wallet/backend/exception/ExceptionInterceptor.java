@@ -23,24 +23,69 @@ import fab.wallet.backend.commons.Constant;
 @ControllerAdvice
 public class ExceptionInterceptor extends ResponseEntityExceptionHandler {
 
+	/**
+	 * When user not found
+	 * 
+	 * @param request
+	 *            Request
+	 * @param httpResponse
+	 *            Http Response
+	 * @param ex
+	 *            Exception
+	 * @return Response to the client
+	 */
 	@ExceptionHandler(value = UserNotFoundException.class)
 	@ResponseBody
 	public Response userNotFound(HttpServletRequest request, HttpServletResponse httpResponse, Exception ex) {
 		return buildErrorResponse(Constant.EX_INCORRECT_USERNAME_OR_PASSWORD, ex.getMessage());
 	}
 
+	/**
+	 * When balance is not sufficient
+	 * 
+	 * @param request
+	 *            Request
+	 * @param httpResponse
+	 *            Http Response
+	 * @param ex
+	 *            Exception
+	 * @return Response to the client
+	 */
 	@ExceptionHandler(value = InsufficientBalanceException.class)
 	@ResponseBody
 	public Response insufficientBalance(HttpServletRequest request, HttpServletResponse httpResponse, Exception ex) {
 		return buildErrorResponse(Constant.EX_INSUFFICIENT_BALANCE, ex.getMessage());
 	}
 
+	/**
+	 * 
+	 * When wallet for a user not found
+	 * 
+	 * @param request
+	 *            Request
+	 * @param httpResponse
+	 *            Http Response
+	 * @param ex
+	 *            Exception
+	 * @return Response to the client
+	 */
 	@ExceptionHandler(value = WalletNotFoundException.class)
 	@ResponseBody
 	public Response walletNotFound(HttpServletRequest request, HttpServletResponse httpResponse, Exception ex) {
 		return buildErrorResponse(Constant.EX_WALLET_NOT_FOUND, ex.getMessage());
 	}
 
+	/**
+	 * Parent exception
+	 * 
+	 * @param request
+	 *            Request
+	 * @param httpResponse
+	 *            Http Response
+	 * @param ex
+	 *            Exception
+	 * @return Response to the client
+	 */
 	@ExceptionHandler(value = Exception.class)
 	public Response parentException(HttpServletRequest request, HttpServletResponse httpResponse, Exception ex) {
 		ex.printStackTrace();

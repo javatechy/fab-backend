@@ -462,3 +462,235 @@
 2017-09-27 20:52:11,721[main] INFO  fab.wallet.backend.BackendApplicationTests - Started BackendApplicationTests in 19.219 seconds (JVM running for 20.085)
 2017-09-27 20:52:11,811[Thread-3] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@791f145a: startup date [Wed Sep 27 20:52:07 IST 2017]; root of context hierarchy
 2017-09-27 20:52:11,814[Thread-3] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-27 20:55:48,876[main] INFO  fab.wallet.backend.BackendApplicationTests - Starting BackendApplicationTests on Deepaks-MacBook-Pro.local with PID 4044 (started by deepak in /Users/deepak/projects/fab/fab-backend)
+2017-09-27 20:55:48,880[main] INFO  fab.wallet.backend.BackendApplicationTests - No active profile set, falling back to default profiles: default
+2017-09-27 20:55:48,902[main] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@791f145a: startup date [Wed Sep 27 20:55:48 IST 2017]; root of context hierarchy
+2017-09-27 20:55:50,487[main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-27 20:55:50,503[main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-27 20:55:50,573[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-27 20:55:50,576[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-09-27 20:55:50,580[main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-09-27 20:55:50,623[main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-27 20:55:50,736[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-09-27 20:55:51,183[main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2017-09-27 20:55:51,285[main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-27 20:55:51,577[main] INFO  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2017-09-27 20:55:51,689[main] DEBUG org.hibernate.SQL - 
+    select
+        user0_.user_id as user_id1_2_,
+        user0_.created_on as created_2_2_,
+        user0_.password as password3_2_,
+        user0_.role as role4_2_,
+        user0_.updated_on as updated_5_2_,
+        user0_.username as username6_2_ 
+    from
+        user user0_
+2017-09-27 20:55:51,766[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        user 
+    where
+        user_id=?
+2017-09-27 20:55:51,770[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [253]
+2017-09-27 20:55:51,773[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        user 
+    where
+        user_id=?
+2017-09-27 20:55:51,775[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [254]
+2017-09-27 20:55:51,776[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        user 
+    where
+        user_id=?
+2017-09-27 20:55:51,777[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [255]
+2017-09-27 20:55:51,779[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        user 
+    where
+        user_id=?
+2017-09-27 20:55:51,779[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [256]
+2017-09-27 20:55:51,780[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        user 
+    where
+        user_id=?
+2017-09-27 20:55:51,780[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [257]
+2017-09-27 20:55:51,781[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        user 
+    where
+        user_id=?
+2017-09-27 20:55:51,782[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [258]
+2017-09-27 20:55:51,789[main] DEBUG org.hibernate.SQL - 
+    select
+        balance0_.id as id1_0_,
+        balance0_.balance as balance2_0_,
+        balance0_.created_on as created_3_0_,
+        balance0_.updated_on as updated_4_0_,
+        balance0_.user_id as user_id5_0_ 
+    from
+        balance balance0_
+2017-09-27 20:55:51,796[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        balance 
+    where
+        id=?
+2017-09-27 20:55:51,796[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [169]
+2017-09-27 20:55:51,798[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        balance 
+    where
+        id=?
+2017-09-27 20:55:51,799[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [170]
+2017-09-27 20:55:51,799[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        balance 
+    where
+        id=?
+2017-09-27 20:55:51,800[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [171]
+2017-09-27 20:55:51,801[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        balance 
+    where
+        id=?
+2017-09-27 20:55:51,801[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [172]
+2017-09-27 20:55:51,827[main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        user
+        (created_on, password, role, updated_on, username) 
+    values
+        (?, ?, ?, ?, ?)
+2017-09-27 20:55:51,829[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARBINARY] - [2017-09-27T20:55:51.814]
+2017-09-27 20:55:51,831[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [admin]
+2017-09-27 20:55:51,832[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [ADMIN]
+2017-09-27 20:55:51,833[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARBINARY] - [2017-09-27T20:55:51.814]
+2017-09-27 20:55:51,834[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [admin]
+2017-09-27 20:55:51,841[main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        user
+        (created_on, password, role, updated_on, username) 
+    values
+        (?, ?, ?, ?, ?)
+2017-09-27 20:55:51,843[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARBINARY] - [2017-09-27T20:55:51.840]
+2017-09-27 20:55:51,843[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [admin2]
+2017-09-27 20:55:51,843[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [ADMIN]
+2017-09-27 20:55:51,844[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARBINARY] - [2017-09-27T20:55:51.840]
+2017-09-27 20:55:51,844[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [admin2]
+2017-09-27 20:55:51,849[main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        user
+        (created_on, password, role, updated_on, username) 
+    values
+        (?, ?, ?, ?, ?)
+2017-09-27 20:55:51,850[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARBINARY] - [2017-09-27T20:55:51.848]
+2017-09-27 20:55:51,850[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [deepak]
+2017-09-27 20:55:51,851[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [NON_ADMIN]
+2017-09-27 20:55:51,851[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARBINARY] - [2017-09-27T20:55:51.848]
+2017-09-27 20:55:51,852[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [deepak]
+2017-09-27 20:55:51,855[main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        balance
+        (balance, created_on, updated_on, user_id) 
+    values
+        (?, ?, ?, ?)
+2017-09-27 20:55:51,857[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [5000]
+2017-09-27 20:55:51,858[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARBINARY] - [2017-09-27T20:55:51.854]
+2017-09-27 20:55:51,860[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARBINARY] - [2017-09-27T20:55:51.854]
+2017-09-27 20:55:51,862[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [BIGINT] - [261]
+2017-09-27 20:55:51,868[main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        user
+        (created_on, password, role, updated_on, username) 
+    values
+        (?, ?, ?, ?, ?)
+2017-09-27 20:55:51,872[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARBINARY] - [2017-09-27T20:55:51.867]
+2017-09-27 20:55:51,872[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [anant]
+2017-09-27 20:55:51,873[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [NON_ADMIN]
+2017-09-27 20:55:51,873[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARBINARY] - [2017-09-27T20:55:51.867]
+2017-09-27 20:55:51,873[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [anant]
+2017-09-27 20:55:51,880[main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        balance
+        (balance, created_on, updated_on, user_id) 
+    values
+        (?, ?, ?, ?)
+2017-09-27 20:55:51,882[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1000]
+2017-09-27 20:55:51,882[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARBINARY] - [2017-09-27T20:55:51.877]
+2017-09-27 20:55:51,883[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARBINARY] - [2017-09-27T20:55:51.877]
+2017-09-27 20:55:51,887[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [BIGINT] - [262]
+2017-09-27 20:55:51,890[main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        user
+        (created_on, password, role, updated_on, username) 
+    values
+        (?, ?, ?, ?, ?)
+2017-09-27 20:55:51,891[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARBINARY] - [2017-09-27T20:55:51.889]
+2017-09-27 20:55:51,892[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [user1]
+2017-09-27 20:55:51,892[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [NON_ADMIN]
+2017-09-27 20:55:51,892[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARBINARY] - [2017-09-27T20:55:51.889]
+2017-09-27 20:55:51,893[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [user1]
+2017-09-27 20:55:51,895[main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        balance
+        (balance, created_on, updated_on, user_id) 
+    values
+        (?, ?, ?, ?)
+2017-09-27 20:55:51,896[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [8000]
+2017-09-27 20:55:51,897[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARBINARY] - [2017-09-27T20:55:51.894]
+2017-09-27 20:55:51,898[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARBINARY] - [2017-09-27T20:55:51.894]
+2017-09-27 20:55:51,899[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [BIGINT] - [263]
+2017-09-27 20:55:51,904[main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        user
+        (created_on, password, role, updated_on, username) 
+    values
+        (?, ?, ?, ?, ?)
+2017-09-27 20:55:51,905[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARBINARY] - [2017-09-27T20:55:51.902]
+2017-09-27 20:55:51,905[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [user2]
+2017-09-27 20:55:51,906[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [NON_ADMIN]
+2017-09-27 20:55:51,906[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARBINARY] - [2017-09-27T20:55:51.902]
+2017-09-27 20:55:51,907[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [user2]
+2017-09-27 20:55:51,910[main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        balance
+        (balance, created_on, updated_on, user_id) 
+    values
+        (?, ?, ?, ?)
+2017-09-27 20:55:51,911[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [100]
+2017-09-27 20:55:51,911[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARBINARY] - [2017-09-27T20:55:51.909]
+2017-09-27 20:55:51,912[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARBINARY] - [2017-09-27T20:55:51.909]
+2017-09-27 20:55:51,912[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [BIGINT] - [264]
+2017-09-27 20:55:52,029[main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/fab/users],methods=[GET],consumes=[*/*],produces=[application/json]}" onto public fab.wallet.backend.api.Response fab.wallet.backend.controller.AdminController.fetchUsers(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-27 20:55:52,037[main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/fab/transactions/{userId}],methods=[GET],consumes=[*/*],produces=[application/json]}" onto public fab.wallet.backend.api.Response fab.wallet.backend.controller.AdminController.fetchTransactionsByUserId(java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-27 20:55:52,039[main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/fab/authenticate],methods=[POST],consumes=[*/*],produces=[application/json]}" onto public fab.wallet.backend.api.Response fab.wallet.backend.controller.UserController.fetchUsers(fab.wallet.backend.api.Request,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws fab.wallet.backend.exception.UserNotFoundException
+2017-09-27 20:55:52,040[main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/fab/purchase],methods=[POST],consumes=[*/*],produces=[application/json]}" onto public fab.wallet.backend.api.Response fab.wallet.backend.controller.UserController.purchase(fab.wallet.backend.api.Request,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws fab.wallet.backend.exception.InsufficientBalanceException,fab.wallet.backend.exception.WalletNotFoundException
+2017-09-27 20:55:52,041[main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/fab/balance/{userId}],methods=[GET],consumes=[*/*],produces=[application/json]}" onto public fab.wallet.backend.api.Response fab.wallet.backend.controller.UserController.getBalance(java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws fab.wallet.backend.exception.WalletNotFoundException
+2017-09-27 20:55:52,044[main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-27 20:55:52,044[main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-27 20:55:52,311[main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@791f145a: startup date [Wed Sep 27 20:55:48 IST 2017]; root of context hierarchy
+2017-09-27 20:55:52,348[main] INFO  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in exceptionInterceptor
+2017-09-27 20:55:52,735[main] INFO  fab.wallet.backend.BackendApplicationTests - Started BackendApplicationTests in 19.189 seconds (JVM running for 19.998)
+2017-09-27 20:55:52,806[Thread-3] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@791f145a: startup date [Wed Sep 27 20:55:48 IST 2017]; root of context hierarchy
+2017-09-27 20:55:52,809[Thread-3] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
