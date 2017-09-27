@@ -1,0 +1,35 @@
+2017-09-27 18:36:04,401[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        user 
+    where
+        user_id=?
+2017-09-27 18:36:04,404[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [193]
+2017-09-27 18:36:04,406[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        user 
+    where
+        user_id=?
+2017-09-27 18:36:04,407[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [194]
+2017-09-27 18:36:04,408[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        user 
+    where
+        user_id=?
+2017-09-27 18:36:04,408[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [195]
+2017-09-27 18:36:04,409[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        user 
+    where
+        user_id=?
+2017-09-27 18:36:04,410[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [196]
+2017-09-27 18:36:04,411[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        user 
+    where
+        user_id=?
+2017-09-27 18:36:04,412[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [197]

@@ -1,0 +1,72 @@
+2017-09-27 18:35:41,272[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        balance 
+    where
+        id=?
+2017-09-27 18:35:41,273[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [127]
+2017-09-27 18:35:41,274[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        balance 
+    where
+        id=?
+2017-09-27 18:35:41,274[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [128]
+2017-09-27 18:35:41,287[main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        user
+        (created_on, password, role, updated_on, username) 
+    values
+        (?, ?, ?, ?, ?)
+2017-09-27 18:35:41,290[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARBINARY] - [2017-09-27T18:35:41.279]
+2017-09-27 18:35:41,293[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [admin]
+2017-09-27 18:35:41,293[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [ADMIN]
+2017-09-27 18:35:41,294[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARBINARY] - [2017-09-27T18:35:41.279]
+2017-09-27 18:35:41,295[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [admin]
+2017-09-27 18:35:41,301[main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        user
+        (created_on, password, role, updated_on, username) 
+    values
+        (?, ?, ?, ?, ?)
+2017-09-27 18:35:41,302[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARBINARY] - [2017-09-27T18:35:41.300]
+2017-09-27 18:35:41,302[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [admin2]
+2017-09-27 18:35:41,302[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [ADMIN]
+2017-09-27 18:35:41,303[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARBINARY] - [2017-09-27T18:35:41.300]
+2017-09-27 18:35:41,303[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [admin2]
+2017-09-27 18:35:41,306[main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        user
+        (created_on, password, role, updated_on, username) 
+    values
+        (?, ?, ?, ?, ?)
+2017-09-27 18:35:41,307[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARBINARY] - [2017-09-27T18:35:41.305]
+2017-09-27 18:35:41,308[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [deepak]
+2017-09-27 18:35:41,308[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [NON_ADMIN]
+2017-09-27 18:35:41,308[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARBINARY] - [2017-09-27T18:35:41.305]
+2017-09-27 18:35:41,309[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [deepak]
+2017-09-27 18:35:41,311[main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        balance
+        (balance, created_on, updated_on, user_id) 
+    values
+        (?, ?, ?, ?)
+2017-09-27 18:35:41,313[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [5000]
+2017-09-27 18:35:41,313[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARBINARY] - [2017-09-27T18:35:41.310]
+2017-09-27 18:35:41,313[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARBINARY] - [2017-09-27T18:35:41.310]
+2017-09-27 18:35:41,313[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [BIGINT] - [195]
+2017-09-27 18:35:41,317[main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        user
+        (created_on, password, role, updated_on, username) 
+    values
+        (?, ?, ?, ?, ?)
+2017-09-27 18:35:41,317[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARBINARY] - [2017-09-27T18:35:41.316]
+2017-09-27 18:35:41,317[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [anant]
+2017-09-27 18:35:41,318[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [NON_ADMIN]
+2017-09-27 18:35:41,318[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARBINARY] - [2017-09-27T18:35:41.316]

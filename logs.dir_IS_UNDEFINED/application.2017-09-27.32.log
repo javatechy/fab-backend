@@ -1,0 +1,14 @@
+2017-09-27 18:33:26,421[main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8070 (http)
+2017-09-27 18:33:26,436[main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-09-27 18:33:26,437[main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-09-27 18:33:26,507[localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-09-27 18:33:26,508[localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1275 ms
+2017-09-27 18:33:26,597[localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-27 18:33:26,600[localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-27 18:33:27,154[main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-27 18:33:27,167[main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-27 18:33:27,225[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-27 18:33:27,226[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-09-27 18:33:27,228[main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist

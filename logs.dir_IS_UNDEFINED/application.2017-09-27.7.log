@@ -1,0 +1,15 @@
+2017-09-27 18:26:36,787[main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-27 18:26:36,908[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-09-27 18:26:37,293[main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2017-09-27 18:26:37,408[main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-27 18:26:37,741[main] INFO  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2017-09-27 18:26:37,840[main] DEBUG org.hibernate.SQL - 
+    select
+        user0_.user_id as user_id1_2_,
+        user0_.created_on as created_2_2_,
+        user0_.password as password3_2_,
+        user0_.role as role4_2_,
+        user0_.updated_on as updated_5_2_,
+        user0_.username as username6_2_ 
+    from
+        user user0_

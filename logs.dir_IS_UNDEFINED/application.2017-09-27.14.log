@@ -1,0 +1,59 @@
+2017-09-27 18:31:55,472[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [163]
+2017-09-27 18:31:55,474[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        user 
+    where
+        user_id=?
+2017-09-27 18:31:55,475[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [164]
+2017-09-27 18:31:55,476[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        user 
+    where
+        user_id=?
+2017-09-27 18:31:55,476[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [165]
+2017-09-27 18:31:55,477[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        user 
+    where
+        user_id=?
+2017-09-27 18:31:55,478[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [166]
+2017-09-27 18:31:55,478[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        user 
+    where
+        user_id=?
+2017-09-27 18:31:55,479[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [167]
+2017-09-27 18:31:55,479[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        user 
+    where
+        user_id=?
+2017-09-27 18:31:55,480[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [168]
+2017-09-27 18:31:55,485[main] DEBUG org.hibernate.SQL - 
+    select
+        balance0_.id as id1_0_,
+        balance0_.balance as balance2_0_,
+        balance0_.created_on as created_3_0_,
+        balance0_.updated_on as updated_4_0_,
+        balance0_.user_id as user_id5_0_ 
+    from
+        balance balance0_
+2017-09-27 18:31:55,490[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        balance 
+    where
+        id=?
+2017-09-27 18:31:55,490[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [109]
+2017-09-27 18:31:55,491[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        balance 
+    where
+        id=?
+2017-09-27 18:31:55,491[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [110]

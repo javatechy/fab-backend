@@ -1,0 +1,6 @@
+2017-09-27 18:26:14,994[main] INFO  fab.wallet.backend.BackendApplicationTests - Started BackendApplicationTests in 19.849 seconds (JVM running for 20.539)
+2017-09-27 18:26:15,071[Thread-3] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@4b45a2f5: startup date [Wed Sep 27 18:26:10 IST 2017]; root of context hierarchy
+2017-09-27 18:26:15,074[Thread-3] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-27 18:26:34,742[main] INFO  fab.wallet.backend.BackendApplication - Starting BackendApplication on Deepaks-MacBook-Pro.local with PID 1783 (/Users/deepak/projects/fab/fab-backend/target/classes started by deepak in /Users/deepak/projects/fab/fab-backend)
+2017-09-27 18:26:34,745[main] INFO  fab.wallet.backend.BackendApplication - No active profile set, falling back to default profiles: default
+2017-09-27 18:26:34,780[main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@eb75b00: startup date [Wed Sep 27 18:26:34 IST 2017]; root of context hierarchy

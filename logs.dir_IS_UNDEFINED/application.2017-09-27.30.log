@@ -1,0 +1,67 @@
+2017-09-27 18:33:05,208[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [anant]
+2017-09-27 18:33:05,214[main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        balance
+        (balance, created_on, updated_on, user_id) 
+    values
+        (?, ?, ?, ?)
+2017-09-27 18:33:05,215[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1000]
+2017-09-27 18:33:05,215[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARBINARY] - [2017-09-27T18:33:05.213]
+2017-09-27 18:33:05,216[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARBINARY] - [2017-09-27T18:33:05.213]
+2017-09-27 18:33:05,216[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [BIGINT] - [184]
+2017-09-27 18:33:05,219[main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        user
+        (created_on, password, role, updated_on, username) 
+    values
+        (?, ?, ?, ?, ?)
+2017-09-27 18:33:05,219[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARBINARY] - [2017-09-27T18:33:05.218]
+2017-09-27 18:33:05,220[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [user1]
+2017-09-27 18:33:05,220[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [NON_ADMIN]
+2017-09-27 18:33:05,220[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARBINARY] - [2017-09-27T18:33:05.218]
+2017-09-27 18:33:05,220[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [user1]
+2017-09-27 18:33:05,222[main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        balance
+        (balance, created_on, updated_on, user_id) 
+    values
+        (?, ?, ?, ?)
+2017-09-27 18:33:05,223[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [8000]
+2017-09-27 18:33:05,223[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARBINARY] - [2017-09-27T18:33:05.222]
+2017-09-27 18:33:05,224[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARBINARY] - [2017-09-27T18:33:05.222]
+2017-09-27 18:33:05,224[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [BIGINT] - [185]
+2017-09-27 18:33:05,227[main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        user
+        (created_on, password, role, updated_on, username) 
+    values
+        (?, ?, ?, ?, ?)
+2017-09-27 18:33:05,228[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARBINARY] - [2017-09-27T18:33:05.226]
+2017-09-27 18:33:05,228[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [user2]
+2017-09-27 18:33:05,230[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [NON_ADMIN]
+2017-09-27 18:33:05,231[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARBINARY] - [2017-09-27T18:33:05.226]
+2017-09-27 18:33:05,231[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [user2]
+2017-09-27 18:33:05,235[main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        balance
+        (balance, created_on, updated_on, user_id) 
+    values
+        (?, ?, ?, ?)
+2017-09-27 18:33:05,235[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [100]
+2017-09-27 18:33:05,236[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARBINARY] - [2017-09-27T18:33:05.234]
+2017-09-27 18:33:05,236[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARBINARY] - [2017-09-27T18:33:05.234]
+2017-09-27 18:33:05,236[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [BIGINT] - [186]
+2017-09-27 18:33:05,352[main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/fab/users],methods=[GET],consumes=[*/*],produces=[application/json]}" onto public fab.wallet.backend.api.Response fab.wallet.backend.controller.AdminController.fetchUsers(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-27 18:33:05,353[main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/fab/transactions/{userId}],methods=[GET],consumes=[*/*],produces=[application/json]}" onto public fab.wallet.backend.api.Response fab.wallet.backend.controller.AdminController.fetchTransactionsByUserId(java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-27 18:33:05,354[main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/fab/purchase],methods=[POST],consumes=[*/*],produces=[application/json]}" onto public fab.wallet.backend.api.Response fab.wallet.backend.controller.UserController.purchase(fab.wallet.backend.api.Request,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws fab.wallet.backend.exception.InsufficientBalanceException,fab.wallet.backend.exception.WalletNotFoundException
+2017-09-27 18:33:05,355[main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/fab/authenticate],methods=[POST],consumes=[*/*],produces=[application/json]}" onto public fab.wallet.backend.api.Response fab.wallet.backend.controller.UserController.fetchUsers(fab.wallet.backend.api.Request,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws fab.wallet.backend.exception.UserNotFoundException
+2017-09-27 18:33:05,355[main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/fab/balance/{userId}],methods=[GET],consumes=[*/*],produces=[application/json]}" onto public fab.wallet.backend.api.Response fab.wallet.backend.controller.UserController.getBalance(java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws fab.wallet.backend.exception.WalletNotFoundException
+2017-09-27 18:33:05,359[main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-27 18:33:05,359[main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-27 18:33:05,617[main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4b45a2f5: startup date [Wed Sep 27 18:33:02 IST 2017]; root of context hierarchy
+2017-09-27 18:33:05,658[main] INFO  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in exceptionInterceptor

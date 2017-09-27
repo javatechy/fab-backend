@@ -1,0 +1,8 @@
+2017-09-27 18:33:29,175[main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8070 (http)
+2017-09-27 18:33:29,181[main] INFO  fab.wallet.backend.BackendApplication - Started BackendApplication in 19.33 seconds (JVM running for 21.936)
+2017-09-27 18:33:43,324[Thread-4] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@27c327e8: startup date [Wed Sep 27 18:33:25 IST 2017]; root of context hierarchy
+2017-09-27 18:33:43,326[Thread-4] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2017-09-27 18:33:43,328[Thread-4] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-27 18:35:38,456[main] INFO  fab.wallet.backend.BackendApplicationTests - Starting BackendApplicationTests on Deepaks-MacBook-Pro.local with PID 1974 (started by deepak in /Users/deepak/projects/fab/fab-backend)
+2017-09-27 18:35:38,458[main] INFO  fab.wallet.backend.BackendApplicationTests - No active profile set, falling back to default profiles: default
+2017-09-27 18:35:38,485[main] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4b45a2f5: startup date [Wed Sep 27 18:35:38 IST 2017]; root of context hierarchy

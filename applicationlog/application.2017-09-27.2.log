@@ -1,0 +1,31 @@
+2017-09-27 18:35:41,067[main] INFO  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2017-09-27 18:35:41,180[main] DEBUG org.hibernate.SQL - 
+    select
+        user0_.user_id as user_id1_2_,
+        user0_.created_on as created_2_2_,
+        user0_.password as password3_2_,
+        user0_.role as role4_2_,
+        user0_.updated_on as updated_5_2_,
+        user0_.username as username6_2_ 
+    from
+        user user0_
+2017-09-27 18:35:41,248[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        user 
+    where
+        user_id=?
+2017-09-27 18:35:41,250[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [187]
+2017-09-27 18:35:41,252[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        user 
+    where
+        user_id=?
+2017-09-27 18:35:41,253[main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [188]
+2017-09-27 18:35:41,254[main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        user 
+    where
+        user_id=?
