@@ -39,7 +39,7 @@ public interface TransactionService {
 	 *            Request from client
 	 * @return Response containing status
 	 * @throws InsufficientBalanceException
-	 *             When balance is <0
+	 *             When balance is less than 0
 	 * @throws WalletNotFoundException
 	 *             When wallet is not found for the user.
 	 */
