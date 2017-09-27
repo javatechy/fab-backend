@@ -4,7 +4,7 @@
 
 	<groupId>fab.wallet</groupId>
 	<artifactId>backend</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>backend</name>
@@ -20,7 +20,7 @@
 	<scm>
 		<connection>scm:git:https://javatechy@github.com/javatechy/fab-backend.git</connection>
 		<developerConnection>scm:git:https://javatechy@github.com/javatechy/fab-backend.git</developerConnection>
-		<tag>backend-0.0.3</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<properties>
