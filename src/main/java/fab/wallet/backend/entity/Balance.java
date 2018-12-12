@@ -6,40 +6,24 @@ package fab.wallet.backend.entity;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
 /**
  * Class representing a user's Balance, identified by "id".
  * 
  * 
  * @author deepak
  */
-@Entity
-@Table(name = "BALANCE")
 public class Balance implements Serializable, Cloneable {
 
 	private static final long serialVersionUID = 1L;
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "ID")
 	private Long id;
 
-	@Column(name = "USER_ID")
 	private Long userId;
 
-	@Column(name = "BALANCE")
 	private Long balance;
 
-	@Column(name = "CREATED_ON")
 	private LocalDateTime createdOn;
 
-	@Column(name = "UPDATED_ON")
 	private LocalDateTime updatedOn;
 
 	public LocalDateTime getCreatedOn() {
